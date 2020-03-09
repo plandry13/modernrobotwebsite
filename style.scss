@@ -1,10 +1,11 @@
 $wt:#fff;
 $bl:#000;
+$bdc:#eee;
 $grey:#777;
 $greybg:#f9f9ff;
 $iconbg:#111;
 $blue:#8a90ff;
-$boxshadow: 0px 10px 30px 0px rgba(212,160,255,0.2);
+$boxshadow: 0px 10px 30px 0px rgba(212, 150, 255, 0.2);
 $gradient: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
 
 *{
@@ -80,4 +81,52 @@ nav{
       }
     }
   }
+}
+.products{
+  width: 100%;
+  padding: 80px 0;
+  .title{
+    text-align: center;
+  }
+  .container{
+    padding: 60px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    .card{
+      width: 100%;
+      max-width: 23%;
+      box-shadow: $boxshadow;
+      &:hover{
+        .cardInfo{
+          .btn{
+        background: $gradient;
+        color: $wt;
+          } 
+        }
+      }
+      .cardBg{
+        background:$wt;
+        display: flex;
+        justify-content: center;
+        padding: 26px 0;
+        border-bottom: 1px solid $bdc;
+        cursor: pointer;
+      }
+      .cardInfo{
+        text-align: center;
+        padding: 18px;
+        background: $greybg;
+        p{
+          margin: 13px 0;
+        }
+        .btn{
+          background:$wt;
+          color: $bl;
+          transition: none;
+          
+        }
+      }
+    }
+  }
+
 }
