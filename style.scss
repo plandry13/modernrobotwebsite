@@ -5,13 +5,13 @@ $greybg:#f9f9ff;
 $iconbg:#111;
 $blue:#8a90ff;
 $boxshadow: 0px 10px 30px 0px rgba(212,160,255,0.2);
-$gradient: linear-gradient(0eeg, #828fff 0%, #d496ff 100%);
+$gradient: linear-gradient(0deg, #828fff 0%, #d496ff 100%);
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .container{
   width: 100%;
@@ -47,7 +47,7 @@ nav{
     .menu{
       a{
         text-decoration: none;
-        columns: $wt;
+        color: $wt;
         text-transform: uppercase;
         font-size: 14px;
         margin-left: 18px;
@@ -65,5 +65,19 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    color: $wt;
+    .mainInfo{
+      h2{
+        font-size: 68px;
+        font-weight: 300;
+        line-height: 1.2;
+      }
+      p{
+        margin: 10px 0 0 0;
+      }
+      .btn{
+        margin: 20px 0;
+      }
+    }
   }
 }
